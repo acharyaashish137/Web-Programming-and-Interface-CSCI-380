@@ -1,0 +1,41 @@
+<!-- Exerecise5.7-Linear Gradient -->
+<!-- Diagonal linear gradients  showing colors of rainbox. -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Linear Gradient</title>
+      <style type = "text/css">
+	  div
+      {
+         width: 500px;
+         height: 500px;
+         border: 3px solid navy;
+         padding: 5px 20px; 
+         text-align: center; 
+     }
+		#diagonal
+      {
+        
+     
+         background: -webkit-gradient(
+            linear, left top, right bottom,
+            color-stop( red), color-stop(orange),color-stop( yellow),
+            color-stop(green),color-stop( blue),color-stop(indigo),color-stop(violet));
+         background: -moz-linear-gradient(
+            top left, red,orange,yellow,green,blue,indigo,violet );
+         background-image: linear-gradient(
+
+			45deg,red,orange,yellow,green,blue,indigo,violet);
+
+      </style>
+   </head>
+   <body>
+      <div id = "diagonal"><h2>Diagonal Linear Gradient</h2></div>
+   </body>
+</html>
+
+
+
+
+

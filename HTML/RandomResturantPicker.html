@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Restaurant Picker</title>
+	<script>
+		function pickRestaurant() {
+			let restaurants = ["Molinas", "Sonic", "Subway", "McDonalds", "Taco Bell", "Pasanos", "Lone Star Eatery", "Chicken Express"];
+			let restaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
+			document.getElementById("restaurant").value = restaurant;
+		}
+	</script>
+</head>
+<body>
+<h1> Select Random Resturant Below: </h1>
+	<form>
+		<label for="restaurant">Restaurant:</label>
+		<input type="text" id="restaurant" readonly>
+		<br><br>
+		<input type="button" value="Pick Restaurant" onclick="pickRestaurant()">
+	</form>
+</body>
+</html>

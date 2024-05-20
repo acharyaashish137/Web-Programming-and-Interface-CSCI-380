@@ -1,0 +1,32 @@
+<!-- Exercise 9.15-->
+<!-- Checking if entered number is even or odd -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checking  Number</title>
+	
+	<script>
+        function evenNumber(number) {
+            return number % 2 === 0;
+        }
+
+        var n;
+        while (true) {
+            n = Number(prompt("Enter an integer(Negative Number to exit )"));
+            if (n <= -1) {
+                break;
+            }
+            if (evenNumber(n)) {
+                alert(n + " is even.");
+            } else {
+                alert(n + " is odd.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

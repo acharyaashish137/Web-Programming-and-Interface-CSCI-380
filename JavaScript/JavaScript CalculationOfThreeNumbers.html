@@ -1,0 +1,24 @@
+<!-- Exercise 6.18 -->
+<!-- Script for the sum,product,average,smallest  and larger of three numbers-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alert Box </title>
+</head>
+<body>
+<script>
+var num1 = Number(prompt("First number:")); // prompt for number 1
+var num2 = Number(prompt("Second number:")); // prompt for number 2
+var num3 = Number(prompt("Third number:")); // prompt for number 3
+// here is the required alert box for output
+alert(
+"The numbers entered are: " + num1 + "," + num2 + "," + num3 + "\n" +
+"Sum: " + (num1 + num2 + num3) + "\n" +
+"Average: " + ((num1 + num2 + num3) / 3) + "\n" +
+"Product: " + (num1 * num2 * num3) + "\n" +
+"Smallest: " + Math.min(num1, num2, num3) + "\n" +
+"Largest: " + Math.max(num1, num2, num3)
+)
+</script>
+</body>
+</html> 

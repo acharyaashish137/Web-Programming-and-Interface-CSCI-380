@@ -1,0 +1,151 @@
+<!-- Exercise 8.11-->
+<!-- Total product sales-->
+<!DOCTYPE html>
+
+<html >
+
+	<head>
+
+		<title> Mail order  house sales </title>
+
+		<script type="text/javascript">
+
+			var itemTotal = 0;
+
+			var counter = 0,
+
+			total = 0;
+
+			var product;
+			var salestotal= 0;
+
+			while (product != "x") {
+
+			counter++;
+
+			product = window.prompt("Enter a product number 1-5 to calculate: \nEnter \"x | to exit.", 0);
+
+			switch (product) {
+
+			case "1":
+
+			var quantity = window.prompt("enter " +
+
+			"quantity sold for product 1: ", 0);
+
+			product = 2.98;
+
+			itemTotal = product * quantity;
+			salestotal+= itemTotal;
+
+			
+
+			break;
+
+			case "2":
+
+			var quantity = window.prompt("enter " +
+
+			"quantity sold for product 2: ", 0);
+
+			product = 4.50;
+
+			itemTotal = product * quantity;
+
+			salestotal+= itemTotal;
+
+
+			break;
+
+			case "3":
+
+			var quantity = window.prompt("enter " +
+
+			"quantity sold for product 3: ", 0);
+
+			product = 9.98;
+
+			itemTotal = product * quantity;
+
+			salestotal+= itemTotal;
+
+
+			break;
+
+			case "4":
+
+			var quantity = window.prompt("enter " +
+
+			"quantity sold for product 4: ", 0);
+
+			product = 4.49;
+
+			itemTotal = product * quantity;
+
+			salestotal+= itemTotal;
+
+
+			break;
+
+			case "5":
+
+			var quantity = window.prompt("enter " +
+
+			"quantity sold for product 5: ", 0);
+
+			product = 6.87;
+
+			itemTotal = product * quantity;
+
+			salestotal+= itemTotal;
+
+
+			break;
+
+			case "x":
+
+			break;
+
+			default:
+
+			document.writeln("This script" +
+
+			" didn't work.\n");
+			document.write("<br />");
+
+
+			}
+
+			if (product != "x") {
+
+			//.00000000000
+
+			document.write("Entry number: " + counter +
+
+			"   Item price: $" + product +
+
+			"   Quantity: " + quantity +
+
+			"   Item Total: $" +
+
+			itemTotal);
+
+			document.write("<br />");
+
+
+
+			}
+
+			}
+		document.write("<h1>\nTotalSales: $"+ salestotal+"</h1>");
+
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

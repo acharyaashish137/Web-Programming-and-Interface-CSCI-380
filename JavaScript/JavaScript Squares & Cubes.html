@@ -1,0 +1,28 @@
+<!-- Exercise 6.24-->
+<!-- Script for square and cubes of numbers in HTML table -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Squares and cubes of the numbers</title>
+		<style>
+		table, th, td {
+		  border: 1px solid black;
+		}
+
+		th, td {
+		  padding: 10px;
+		}
+		</style>
+		<script>
+		document.write( "<table  > <tr> <th>number</th> <th>square</th> <th>cube</th> </tr>" );
+		for(var num=0; num<=5; num++)
+		{
+		document.write( "<tr><td>" + num + "</td><td>" + num*num + "</td><td>" + num*num*num + "</td></tr>" );
+		}
+		document.write( "</table>" );
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

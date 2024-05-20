@@ -1,0 +1,35 @@
+<!-- Exercise 8.7-->
+<!-- Product of odd integers -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product of odd integers</title>
+    <meta name="description" content=".">
+    <meta charset="utf-8">
+    <script>
+        var product = 1;
+      
+        document.write("The product of odd integers from 1 to 15:  ");
+        // to get odd value
+        for (var num=1; num<=15; num+=2)
+	{
+            product = product * num;
+         
+            if (num <15)
+	    {
+                document.write(num + " * ");
+            }
+            else 
+	    {
+                document.write(num + " = ");
+            }
+        }
+      
+        document.write("<b>" +product + "</b>");
+    </script>
+</head>
+<body>
+    
+  
+</body>
+</html>

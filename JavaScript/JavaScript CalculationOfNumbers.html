@@ -1,0 +1,47 @@
+<!-- Exercise 6.16 -->
+<!-- Script for the sum,product,difference and quotient of two number-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Calculations of Numbers</title>
+      <script>
+
+         var number1; // first string entered by user
+         var number2; // second string entered by user
+         var x; // first number to add
+         var y; // second number to add
+         var sum; // sum of number1 and number2
+		 var difference; // difference
+		 var product; // product
+		 var quotient; //quotient
+		 
+
+         // read in first number from user as a string
+         number1 = window.prompt( "Enter first integer" );
+
+         // read in second number from user as a string
+         number2 = window.prompt( "Enter second integer" );
+
+         // convert numbers from strings to integers
+         x = parseInt( number1 ); 
+         y = parseInt( number2 );
+         
+         sum = x + y; // add the numbers
+		 difference = x-y;
+		 product = x*y;
+		 quotient = x/y; 
+
+         // display the results
+		document.writeln("<h1>The numbers entered are:" + x + "," + y +"<\h1>");
+		document.writeln( "<h2> Sum: " + sum + "<\h2>");
+		document.writeln( "<h2>Difference: " + difference + "<\h2>");
+		document.writeln( "<h2>Product: " + product + "<\h2>" );
+		document.writeln( "<h2>Quotient: " + quotient + "<\h2>");
+		</script>
+   </head><body></body>
+</html>
+
+
+
+

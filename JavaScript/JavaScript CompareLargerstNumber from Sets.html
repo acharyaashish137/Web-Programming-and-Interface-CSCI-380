@@ -1,0 +1,35 @@
+<!-- Exercise 7.15-->
+<!-- Largest number from set of 10 single digit numbers -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Largest Number</title>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+		var count=1; 
+		var num= new Array;   
+		num.length=9; 
+		var newnumber; 
+		var largest=0;
+
+		while (count <= 10) {
+		newnumber=window.prompt("Enter Numbers 0-9 Numbercount: "+count+".");
+			if(parseInt(newnumber)<10){
+				num[count]= parseInt(newnumber); 
+				if(num[count]>largest){ 
+				largest=num[count];
+				}
+			}
+			else{
+			alert("enter single digit"); 
+			count--; 
+			}
+		count++; 
+		}
+
+		document.write("<h1>Largest number is "+largest+"</h1>");
+		</script>
+	</body>
+</html>

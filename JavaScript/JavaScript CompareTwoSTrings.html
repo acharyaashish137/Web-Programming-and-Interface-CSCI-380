@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Compare Two Strings</title>
+    <h1>Compare Two Strings</h1>
+    <script type="text/javascript">
+        function start() {
+            var str1 = document.getElementById("s1").value; // get the value of the first string
+            var str2 = document.getElementById("s2").value; // get the value of the second string
+
+            document.write("<b>The strings entered are: " + str1 + ", " + str2 + "</b><br>");
+
+            if (str1 > str2) {
+                document.write(str2 + " is smaller than " + str1);
+            } else if (str1 < str2) {
+                document.write(str2 + " is greater than " + str1);
+            } else {
+                document.write(str1 + " is equal to " + str2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="search" action="#">
+        <p>Enter the first string
+        <input type="text" id="s1" name="s1"></p>
+
+        <p>Enter the second string
+        <input type="text" id="s2" name="s2"></p>
+
+        <input type="button" value="Compare" onclick="start()" />
+    </form>
+</body>
+</html>

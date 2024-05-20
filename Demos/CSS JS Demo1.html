@@ -1,0 +1,132 @@
+
+<html>
+<head>
+<title>Using Bluefish as HTML Editor</title>
+<script type = "text/javascript">
+
+	function start()
+	{
+	var str1 =  search.s1.value;   // to search s1 enter by user.
+	var str2 =  search.s2.value;	  // to search s2 enter by user.
+
+	document.writeln("<b>The numbers entered are :" + str1 + "," + str2+"</b><br>");
+
+	if (str1>str2)
+	{
+	document.writeln(str2+" is  less than  "+str1);
+	}
+	else if (str1<str2)
+	{
+	document.writeln(str2+"  is greater than "+str1);
+	}			
+	else 
+	document.writeln(str2+" is equal to "+str2);
+
+
+	}
+	</script>
+</head>
+<body>
+
+
+
+<style type="text/css">
+
+
+th, td {
+   border: 1px solid blue;
+   }
+   table {
+   border: 3px solid red;SS
+   }
+img
+         {
+            position: absolute;
+            -webkit-animation: movingimage linear 4s 1s infinite reverse ;
+            -moz-animation: movingimage linear 4s 1s infinite reverse ;
+            animation: movingimage linear 4s 1s infinite reverse;
+         }
+         @-webkit-keyframes movingimage 
+         {
+            0%    {top: 0; right: 0}
+			25%   {top: 0; right: 100px;}
+			50%   {top: 100px; right: 100px;}
+			75%   {top: 100px; right: 0px;}
+			200px  {top: 0px; right: 0px;}
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%    {top: 0; right: 0}
+			25%   {top: 0; right: 100px;}
+			50%   {top: 100px; right: 100px;}
+			75%   {top: 100px; right: 0px;}
+			200px  {top: 0px; right: 0px;}
+         }
+         @keyframes movingimage
+         {0%    {top: 0; right: 0}
+			25%   {top: 0; right: 100px;}
+			50%   {top: 100px; right: 100px;}
+			75%   {top: 100px; right: 0px;}
+			200px  {top: 0px; right: 0px;}
+         }
+</style>
+<img src="computer.png" alt="Computer pic" class="img">
+<h1>Using Bluefish Text Editor</h1>
+
+<p> Bluefish is a powerful editor targeted towards programmers and web developers,
+<br>with many options to write websites, scripts and programming code.
+<br>It is easy to write HTML, CSS and JavaScript as it has various auto-generated code.
+</p>
+<h2>Advantages of using Bluefish </h2>
+<ol>
+<li>Bluefish include spell checking and  automated content recovery</li>
+<li>Bluefish is easy to use.</li>
+</ol>
+
+<h2> Drawbacks of Bluefish as HTML Editor</h2>
+<li>It has no syntax checker or beautifier.</li>
+<li>It is young and still missing specialised features.</li>
+<li> It is not ideal for anyone who'd like a visual editor.</b></li>
+
+
+
+<br><br>
+
+<table class="table">
+
+<tr>
+<th class="table">Name</td>
+<th class="table">Ashish  Acharya</td>
+</tr>
+<tr>
+
+<td class="table">Student ID </td>
+
+<td class="table">50337433</td>
+
+</tr>
+<tr>
+
+<td class="table">University </td>
+
+<td class="table">Texas AM University-Commerce</td>
+
+</tr></table>
+
+<h3>Let's compare two numbers below:</h3>
+<form id = "search" action ="#">
+
+		<p>Enter the first  string
+		<input type ="text" name = "s1"></p>
+
+		<p>Enter the second string
+		<input type = "text" name = "s2"></p>
+
+		<input type ="button" type="submit" value="compare" onclick = "start()" />
+		</form>
+		
+		<p>All information on this site is <strong>&copy:Ashish.Acharya.Inc 2023</strong></p>
+</body>
+</html>
+
+</html>

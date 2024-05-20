@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Cube Calculations</title>
+</head>
+<body>
+	<script>
+		let side = prompt("Enter the length of the cube:");
+		let volume = Math.pow(side, 3);
+		let surfaceArea = 6 * Math.pow(side, 2);
+		let sphereVolume = (4 / 3) * Math.PI * Math.pow(side / 2, 3);
+		let sphereSurfaceArea = 4 * Math.PI * Math.pow(side / 2, 2);
+		let spaceVolume = volume - sphereVolume;
+
+	document.write("<h2>Cube Calculations</h2>");
+	document.write("<p>Side length: " + side + "</p>");
+	document.write("<p>Volume: " + volume + "</p>");
+	document.write("<p>Surface Area: " + surfaceArea + "</p>");
+	document.write("<p>Volume of Largest Sphere: " + sphereVolume + "</p>");
+	document.write("<p>Surface Area of Largest Sphere: " + sphereSurfaceArea + "</p>");
+	document.write("<p>Volume of Space Between Cube and Sphere: " + spaceVolume + "</p>");
+</script>
+
+</body>
+</html>

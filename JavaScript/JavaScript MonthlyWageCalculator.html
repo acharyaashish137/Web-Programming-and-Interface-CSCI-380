@@ -1,0 +1,64 @@
+<!-- Exercise 7.14-->
+<!-- Calculation of wages for each employee -->
+<html>
+<head>
+<title>Pay Day </title>
+<script type="text/javascript">
+
+
+var employee1;
+var rate1;
+var employee2;
+var rate2;
+var employee3;
+var rate3;
+employee1 = window.prompt("Enter Number of Hours Employeemployee1 worked last week:");
+rate1 = window.prompt("Enter hourly wage rate for Employeemployee1:");
+employee2 = window.prompt("Enter Number of Hours Employeemployee2 worked last week:");
+rate2 = window.prompt("Enter hourly wage rate for Employeemployee2:");
+employee3 = window.prompt("Enter Number of Hours Employeemployee3 worked last week:");
+rate3 = window.prompt("Enter hourly wage rate for Employeemployee3:");
+var wage1;
+if(parseInt(employee1)>40)
+{
+var extrahours = parseInt(parseInt(employee1)-40);
+var extrarate= parseInt(rate1) + (parseInt(rate1) / 2 );
+wage1= ((40 * parseInt(rate1))+ (extrahours * parseInt(extrarate)));
+}
+else
+{
+wage1=parseInt(employee1) * parseInt(rate1);
+}
+document.write( "<h1> Employe1 Gross Wage is: " + wage1 + "<\h1>");
+var wage2;
+if(parseInt(employee2)>40)
+{
+var extrahours1 = parseInt(parseInt(employee2)-40);
+var extraratemployee1= parseInt(rate2) + (parseInt(rate2) / 2 );
+wage2= ((40 * parseInt(rate2))+ (extrahours1 * parseInt(extraratemployee1)));
+}
+else
+{
+wage2=parseInt(employee2) * parseInt(rate2);
+}
+document.write( "<h2>Employee2 Gross Wage is: " + wage2 + "<\h2>");
+var wage3;
+if(parseInt(employee3)>40)
+{
+var extrahours2 = parseInt(parseInt(employee3)-40);
+var extraratemployee2= parseInt(rate3) + (parseInt(rate3) / 2 );
+wage3= ((40 * parseInt(rate3))+ (extrahours2 * parseInt(extraratemployee2)));
+}
+else
+{
+wage3=parseInt(employee3) * parseInt(rate3);
+}
+document.write("<h3> Employee3 Gross Wage is: " + wage3 + "<\h3>");
+
+
+</script>
+</head>
+<body>
+<hr />
+</body>
+</html>
